@@ -9,7 +9,7 @@ using namespace std;
 class Node{
  public:
   Node(); //default constructor
-  Node(student*); //modified constructor
+  Node(student* newstudent); //modified constructor
   ~Node(); //destructor
   
   //getters and setters
@@ -19,6 +19,8 @@ class Node{
   student* getStudent();
 
   //things that are stored in the node
-  student* student;
+  student* Student;
   Node* next;
-}
+} ;
+
+#endif

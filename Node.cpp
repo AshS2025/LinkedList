@@ -6,22 +6,21 @@
 using namespace std;
 
 Node:: Node(){
-  student = new student();
+  Student = new student();
   next = NULL;
 }
 
 Node :: Node(student* newstudent){
   next = NULL;
-  student = newstudent;
-  
+  Student = newstudent;  
 }
 
 Node :: ~Node(){
-  delete &student;
+  delete Student;
   next = NULL;
 }
 
-void Node :: setNext(newnext){
+void Node :: setNext(Node* newnext){
   next = newnext;
 }
 
@@ -29,10 +28,10 @@ Node* Node:: getNext(){
   return next;
 }
 
-void Node :: setStudent(newstudent){
-  student = newstudent;
+void Node :: setStudent(student* newstudent){
+  Student = newstudent;
 }
 
 student* Node :: getStudent(){
-  return student;
+  return Student;
 }
